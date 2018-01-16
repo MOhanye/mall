@@ -1,0 +1,18 @@
+.userinfo{ width: 400px;
+    height:600px;
+    margin-left: 200px;
+}
+h4{ display: inline}
+input{ margin-top: 10px}
+.userinfo input[type="text"],.userinfo input[type="password"] {
+    width: 90%;
+    margin: 0px;
+    color: #000;
+    background: none;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #000;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    margin-bottom: 20px;
+}

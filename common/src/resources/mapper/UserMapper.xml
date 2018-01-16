@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hwua.common.dao.UserMapper">
+    <select id="queryUser" parameterType="string" resultType="user">
+        SELECT * FROM user WHERE USERNAME = #{username} AND PASSWORD = #{password}
+    </select>
+
+    <select id="queryCount" parameterType="string" resultType="int">
+        SELECT COUNT(id) FROM user WHERE USERNAME = #{username}
+    </select>
+
+
+</mapper>
